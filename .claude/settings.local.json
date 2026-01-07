@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -ExecutionPolicy Bypass -File \"C:\\\\Users\\\\David\\\\Desktop\\\\clipboards\\\\ClipboardManagerCS\\\\create_icon.ps1\")",
+      "Bash(powershell:*)",
+      "Bash(dotnet build:*)",
+      "Bash(dotnet run)",
+      "Bash(Start-Process \"C:\\\\Users\\\\David\\\\Desktop\\\\clipboards\\\\ClipboardManagerCS\\\\bin\\\\Debug\\\\net6.0-windows\\\\Clip.exe\")",
+      "Bash(timeout:*)"
+    ]
+  }
+}
