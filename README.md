@@ -164,6 +164,7 @@ Clip can be configured to start automatically when Windows boots.
 4. Move the shortcut into the Startup folder
 
 The app will now start automatically when you log in.
+
 ---
 
 ## How Duplicate Prevention Works
