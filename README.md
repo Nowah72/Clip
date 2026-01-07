@@ -71,7 +71,7 @@ Clip automatically tracks clipboard changes and gives you:
 
 Clip includes a built-in **Snip** feature (screen capture):
 ### Snip Tool
-![Snip preview](screenshots/snip.png)
+![Snip preview](screenshots/snip.gif)
 ### Start a snip
 - Click the **Snip** button in the top bar
 - The main window hides while you capture an area of the screen
