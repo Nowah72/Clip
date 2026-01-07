@@ -33,7 +33,8 @@ Clip automatically tracks clipboard changes and gives you:
 ---
 
 ## Tabs
-
+### Text History
+![Text tab](screenshots/text.png)
 ### Text
 - Shows all copied text entries
 - **Click** an item to copy it back to the clipboard
@@ -69,7 +70,8 @@ Clip automatically tracks clipboard changes and gives you:
 ## Snip
 
 Clip includes a built-in **Snip** feature (screen capture):
-
+### Snip Tool
+![Snip preview](screenshots/snip.png)
 ### Start a snip
 - Click the **Snip** button in the top bar
 - The main window hides while you capture an area of the screen
