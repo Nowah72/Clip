@@ -76,7 +76,8 @@ Clip includes a built-in **Snip** feature (screen capture):
 ### Start a snip
 - Click the **Snip** button in the top bar
 - The main window hides while you capture an area of the screen
-
+### Quality of Life Feature
+-You can use the thumbnail after you snip directly as a drag & drop file on your computer(Full quality)
 ### Snip preview
 After capturing, Clip shows a preview modal with actions like:
 - **Save to File** (exports the snip as an image file)
