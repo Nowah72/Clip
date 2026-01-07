@@ -1,133 +1,167 @@
 # Clip — Clipboard Manager for Windows
 
-Clip is a modern, lightweight clipboard manager for Windows that helps you **store**, **organize**, and **reuse** anything you copy — text or images — with minimal friction.
+Clip is a modern, lightweight clipboard manager for Windows that helps you **capture**, **store**, **organize**, and **reuse** what you copy — **text** and **images** — with minimal friction.
 
-This document serves both as a **feature overview** and a **mini user guide**.
-
----
-
-## What Clip Does
-
-Clip runs in the background and automatically keeps a history of:
-- Text you copy
-- Images you copy
-
-From there, you can:
-- Quickly copy items again
-- Organize items into groups
-- Star important items
-- Drag & drop items for better organization
-
-All with a clean, distraction-free interface.
+This README is both a **feature overview** and a **mini user guide**.
 
 ---
 
-## Main Sections (Tabs)
+## Table of Contents
+- [At a Glance](#at-a-glance)
+- [Tabs](#tabs)
+- [Quick Start](#quick-start)
+- [Snip](#snip)
+- [Groups](#groups)
+- [Starred](#starred)
+- [Drag & Drop](#drag--drop)
+- [How Duplicate Prevention Works](#how-duplicate-prevention-works)
+- [Image Handling & Memory Management](#image-handling--memory-management)
+- [Tips](#tips)
+- [License](#license)
+
+---
+
+## At a Glance
+
+Clip automatically tracks clipboard changes and gives you:
+- **History** of copied text and images
+- **One-click re-copy** back into the clipboard
+- **Groups** for organizing items
+- **Starred** items for favorites
+- **Snip** tool (screen capture) with quick editing and save options
+
+---
+
+## Tabs
 
 ### Text
 - Shows all copied text entries
-- Click any item to copy it back to the clipboard
-- No duplicate entries when re-copying existing items
-- Ideal for snippets, commands, notes, or repeated text
+- **Click** an item to copy it back to the clipboard
+- Great for snippets, commands, notes, and repeated text
 
 ### Images
-- Shows all copied images as thumbnails
-- Click an image to copy it back to the clipboard
-- Images are deduplicated automatically
-- Safe to re-copy without creating duplicates
+- Shows copied images as thumbnails
+- **Click** an image to copy it back to the clipboard
+- Images are deduplicated automatically (no spam duplicates)
 
 ### Starred
 - Shows all items (text or images) you marked as starred
-- Use this for frequently reused or important content
-- Starred items remain accessible across sessions
+- Use this for frequently reused content
 
 ### Groups
-- Create custom groups to organize clipboard items
-- Drag text or images into groups
-- Groups help separate work contexts (e.g. Work, School, Personal)
+- Create and manage custom groups
+- Drag text/images into groups to keep things organized
 
 ---
 
-## How to Use Clip
+## Quick Start
 
-### Copying Items
-1. Copy text or an image anywhere in Windows (Ctrl+C, right click, etc.)
-2. The item instantly appears in Clip under the appropriate tab
-3. No action required — it happens automatically
-
-### Reusing Items
-- **Text**: click once to copy it again
-- **Image**: click once to copy it again
-- The item is placed back into your clipboard, ready to paste
-
-### Starring Items
-- Click the star icon on any item
-- The item will appear in the **Starred** tab
-- Useful for content you use often
+1. Run the app
+2. Copy anything in Windows (Ctrl+C):
+   - Text → appears in **Text**
+   - Image → appears in **Images**
+3. Click an item inside Clip to copy it again
+4. Use **Star** to favorite important items
+5. Use **Groups** to organize with drag & drop
 
 ---
 
-## Groups — Mini Guide
+## Snip
 
-### Creating a Group
-- Go to the **Groups** tab
-- If no groups exist, the entire area is clickable
-- Click anywhere (or the plus icon) to create a new group
+Clip includes a built-in **Snip** feature (screen capture):
 
-### Adding Items to a Group
-1. Click and drag a text or image item
-2. While dragging, the app automatically switches to the Groups tab
-3. Drop the item into the desired group
+### Start a snip
+- Click the **Snip** button in the top bar
+- The main window hides while you capture an area of the screen
 
-### Important Drag Behavior
-- Clicking copies an item
-- Dragging organizes an item
-- These actions are clearly separated to prevent mistakes
+### Snip preview
+After capturing, Clip shows a preview modal with actions like:
+- **Save to File** (exports the snip as an image file)
+- **Save to Clip** (adds the snip to your Images history so you can reuse it)
+- **Copy** (copies the snip to clipboard immediately)
 
----
+### Quick editing (before saving)
+In the snip preview you can do lightweight edits such as:
+- **Rotate** (90°)
+- **Flip Horizontal**
+- **Flip Vertical**
 
-## Drag & Drop Behavior (Important)
-
-- A small mouse movement does nothing
-- Once you move far enough, drag mode activates
-- During drag:
-  - Copy is NOT triggered
-  - The UI switches to Groups automatically
-- Releasing without dragging performs a normal copy
-
-This prevents accidental actions and keeps behavior predictable.
+> Tip: If you close the snip preview without saving/copying, the temporary snip file is cleaned up automatically.
 
 ---
 
-## Design Philosophy
+## Groups
 
-Clip is built around a few core ideas:
+### Create a group
+- Open the **Groups** tab
+- If there are no groups yet, you’ll see an empty-state overlay (plus icon)
+- Click anywhere in that area to create a new group
 
-- **Fast** — everything is one click away
-- **Predictable** — no unexpected behavior
-- **Minimal** — no clutter or unnecessary UI
-- **Calm** — subtle visuals that blend in
+### Add items to a group
+- Drag an item from **Text** or **Images**
+- Drop it into the target group
 
-It is meant to stay out of your way and just work.
-
----
-
-## Typical Use Cases
-
-- Developers reusing code snippets
-- Designers reusing images
-- Students managing copied notes
-- Anyone who copies the same things repeatedly
+Groups are perfect for:
+- Work / School / Personal separation
+- Project-specific snippets
+- Frequently reused assets
 
 ---
 
-## Getting Started
+## Starred
 
-1. Download and run the application
-2. Start copying text or images as usual
-3. Open Clip to browse, reuse, or organize your clipboard history
+- Star any text or image to keep it easily accessible
+- The **Starred** tab acts like a “favorites shelf” for your best items
 
-No setup required.
+---
+
+## Drag & Drop
+
+Clip intentionally separates **click** vs **drag** behavior so it feels reliable:
+
+- **Click** → copies the item
+- **Drag** → organizes the item (to Groups)
+
+To make dropping easier, when you start a real drag action the UI can switch you to the Groups tab so you can see where to drop.
+
+---
+
+## How Duplicate Prevention Works
+
+Clip avoids duplicates by using **hashing**:
+- When clipboard content changes, Clip computes a hash based on the content
+- If an item with the same hash already exists, it won’t be added again
+- This is applied to both text and images
+
+This prevents “history spam” when you copy the same thing repeatedly.
+
+---
+
+## Image Handling & Memory Management
+
+Images can be heavy, so Clip is designed to stay responsive:
+
+### Thumbnails for the UI
+- Clip generates and stores a **thumbnail** version for each image
+- The UI lists thumbnails (fast to render)
+- Full image data is only used when needed (e.g., copy back to clipboard)
+
+### Snip temp files (safe + clean)
+- Snips are saved to a temporary file at full quality so preview and export stay crisp
+- If you **Save** or **Add to Clip**, the temp file is cleared afterwards
+- If you close the preview without action, the temp file is still cleaned up
+
+### Practical behavior
+- Images are deduplicated to avoid unnecessary growth
+- Clipboard copy-back for images is implemented in a way that avoids re-adding the same image again
+
+---
+
+## Tips
+
+- Use **Starred** for your “top 10” reused items
+- Use **Groups** to keep projects clean and separated
+- Use **Snip** for quick captures, then “Save to Clip” to reuse later
 
 ---
 
