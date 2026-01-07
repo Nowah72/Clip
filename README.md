@@ -160,7 +160,7 @@ Images can be heavy, so Clip is designed to stay responsive:
 ---
 
 ## Tips
-
+-  **Open Shortcut** is Alt+V, you can change it in settings
 - Use **Starred** for your “top 10” reused items
 - Use **Groups** to keep projects clean and separated
 - Use **Snip** for quick captures, then “Save to Clip” to reuse later
