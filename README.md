@@ -34,7 +34,7 @@ Clip automatically tracks clipboard changes and gives you:
 
 ## Tabs
 ### Text History
-![Text tab](screenshots/text.png)
+![Text tab](screenshots/text.gif)
 ### Text
 - Shows all copied text entries
 - **Click** an item to copy it back to the clipboard
