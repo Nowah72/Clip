@@ -44,7 +44,8 @@ Clip automatically tracks clipboard changes and gives you:
 - Shows copied images as thumbnails
 - **Click** an image to copy it back to the clipboard
 - Images are deduplicated automatically (no spam duplicates)
-
+- Images can be viewed large and you can access their location
+  
 ### Starred
 - Shows all items (text or images) you marked as starred
 - Use this for frequently reused content
@@ -57,7 +58,7 @@ Clip automatically tracks clipboard changes and gives you:
 
 ## Quick Start
 
-1. Run the app
+1. Run the app (After running, you can use shortcut Alt+V to hide/view)
 2. Copy anything in Windows (Ctrl+C):
    - Text → appears in **Text**
    - Image → appears in **Images**
@@ -66,7 +67,30 @@ Clip automatically tracks clipboard changes and gives you:
 5. Use **Groups** to organize with drag & drop
 
 ---
+## Build & Create Your Own EXE
 
+You can build the application yourself using the .NET CLI.
+
+### Requirements
+- Windows
+- .NET SDK installed
+
+### Build an executable
+From the project root folder, run:
+
+```bash
+dotnet publish -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true
+```
+
+### Output
+After the build finishes, your executable will be located in:
+
+```
+bin/Release/**/publish/
+```
+You can run the `.exe` directly — no installation required.(Might not work, depending on System)
+
+---
 ## Snip
 
 Clip includes a built-in **Snip** feature (screen capture):
