@@ -14,6 +14,7 @@ This README is both a **feature overview** and a **mini user guide**.
 - [Groups](#groups)
 - [Starred](#starred)
 - [Drag & Drop](#drag--drop)
+- [How to install](#Build-&-Create-Your-Own-EXE)
 - [How Duplicate Prevention Works](#how-duplicate-prevention-works)
 - [Image Handling & Memory Management](#image-handling--memory-management)
 - [Tips](#tips)
