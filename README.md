@@ -67,30 +67,6 @@ Clip automatically tracks clipboard changes and gives you:
 5. Use **Groups** to organize with drag & drop
 
 ---
-## Build & Create Your Own EXE
-
-You can build the application yourself using the .NET CLI.
-
-### Requirements
-- Windows
-- .NET SDK installed
-
-### Build an executable
-From the project root folder, run:
-
-```bash
-dotnet publish -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true
-```
-
-### Output
-After the build finishes, your executable will be located in:
-
-```
-bin/Release/**/publish/
-```
-You can run the `.exe` directly — no installation required.(Might not work, depending on System)
-
----
 ## Snip
 
 Clip includes a built-in **Snip** feature (screen capture):
@@ -150,6 +126,44 @@ Clip intentionally separates **click** vs **drag** behavior so it feels reliable
 
 To make dropping easier, when you start a real drag action the UI can switch you to the Groups tab so you can see where to drop.
 
+---
+## Build & Create Your Own EXE
+
+You can build the application yourself using the .NET CLI.
+
+### Requirements
+- Windows
+- .NET SDK installed
+
+### Build an executable
+From the project root folder, run:
+
+```bash
+dotnet publish -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true
+```
+
+### Output
+After the build finishes, your executable will be located in:
+
+```
+bin/Release/**/publish/
+```
+You can run the `.exe` directly — no installation required.(Might not work, depending on System)
+
+---
+## Start on Windows Startup
+
+Clip can be configured to start automatically when Windows boots.
+1. Press `Win + R`
+2. Type:
+   ```
+   shell:startup
+   ```
+   and press Enter
+3. Create a shortcut to the app `.exe`
+4. Move the shortcut into the Startup folder
+
+The app will now start automatically when you log in.
 ---
 
 ## How Duplicate Prevention Works
